@@ -1,0 +1,61 @@
+/*nav component*/
+.logo{
+    height: 4rem;
+    display: flex;
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search__input{
+    width: 35rem;
+    height: 2.5rem;
+    border: none;
+    outline: none;
+    border-radius: 15rem;
+    padding: 1.5rem;
+}
+
+.search i{
+    position: relative;
+    left: -3.8rem;
+}
+
+.search i:hover{
+    position: relative;
+    left: -6rem;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.849);
+    height: 3rem;
+    width: 6rem;
+    border-radius: 15rem;
+    padding: 0.8rem 0.8rem 0.8rem 2.5rem;
+}
+
+.search i::after{
+    
+    background-color: rgba(0, 0, 0, 0.849);
+    border-radius: 15rem;
+    height: 3rem;
+    width: 6rem;
+}
+
+.menu{
+    height: 5rem;
+    justify-content: space-between;
+    margin: 0.9rem;
+}
+
+.menu ul li:hover{
+    position: relative;
+    height: 0.3rem;
+    background-color: whitesmoke;
+}
+
+
+
+
+
