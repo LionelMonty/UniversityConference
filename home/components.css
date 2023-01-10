@@ -1,0 +1,248 @@
+
+/*navigation bar*/
+nav{
+    font-size: 2rem;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+
+nav ul li{
+    margin: 1rem;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: var(--C8);
+}
+
+nav ul li a:hover{
+    color: var(--C1); 
+}
+
+nav img{
+    height: 4rem;
+    display: none;
+}
+/*main Content ==> udmLogo*/
+
+.udmLogo{
+    height: 18rem;
+    display: flex;
+    align-items: center;
+}
+
+.udmLogo img{
+    height: 9rem;
+    margin: 5rem;
+}
+
+/*main Content ==> event*/
+
+.event{
+    background-image: url("../images/rea.jpg"); /*rea.jpg ou b.jpg*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: centers;
+    height: 33rem;
+    color:var(--C8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.event h2{
+    text-align: center;
+    font-size: 3rem;
+}
+
+.event h3{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.event p{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.event p a{
+    color: var(--C8);
+    text-decoration: none;
+}
+
+/*main Content ==> icacieLogo*/
+
+.icacieLogo{
+    height: 18rem;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.icacieLogo img{
+    height: 9rem;
+    margin: 5rem;
+}
+
+/*styling icon for nav bar*/
+
+.bar{
+    display: flex;
+    flex:1;
+    margin: 3rem;
+    align-items: center;
+    justify-content: right;
+    display: none;
+}
+
+.bar span{
+    position:absolute;
+    color: var(--C8);
+    font-size: 3.2rem;
+    padding: 0 -1rem;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+
+
+
+
+/*-----responsive-----*/
+
+@media screen and (max-width:690px){
+
+    /*navigation bar*/
+    nav{
+        height: 7rem;
+        padding: 1rem;
+    }
+
+    .udmLogo img{
+        z-index: -1;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--C6);
+        line-height: 2.4rem;
+        visibility: hidden;
+        transition: 0.3s;
+    }
+
+    nav ul li{
+        transition: 0.3s 0.1s all;
+        opacity: 0;
+    }
+
+    nav ul li a{
+        color:var(--C8);
+    }
+
+    nav img{
+        display:flex;
+        height: 4rem;
+        width: 28%;
+        padding: 0.4rem 1rem;
+    }
+
+    /*icon bar*/
+    .bar{
+        display: flex;
+        position: absolute;
+        top: -1rem;
+        right: -1rem;
+        cursor: pointer;
+        padding: 1rem;
+    }
+
+    .bar #times{
+        display:none;
+    }
+
+    #check:checked ~ nav .bar #times{
+        display: block;
+    } 
+
+    #check:checked ~ nav .bar #bars{
+        display: none;
+    } 
+
+    #check:checked ~ nav ul{
+        visibility: visible;
+    }
+
+    /*style menu*/
+    nav ul li:nth-child(1){
+        transform: translateX(-15rem);
+    }
+    nav ul li:nth-child(2){
+        transform: translateX(-20rem);
+    }
+    nav ul li:nth-child(3){
+        transform: translateX(-25rem);
+    }
+    nav ul li:nth-child(4){
+        transform: translateX(-30rem);
+    }
+    nav ul li:nth-child(5){
+        transform: translateX(-35rem);
+    }
+
+    #check:checked ~ nav  ul li:nth-child(1),
+    #check:checked ~ nav  ul li:nth-child(2),
+    #check:checked ~ nav  ul li:nth-child(3),
+    #check:checked ~ nav  ul li:nth-child(4),
+    #check:checked ~ nav  ul li:nth-child(5){
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    .udmLogo{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .udmLogo img{
+        height: 9rem;
+    }
+
+    .icacieLogo{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .icacieLogo img{
+        height: 9rem;
+    }
+
+    .event{
+        z-index: -1;
+    }
+
+    .event h2{
+        text-align: center;
+        font-size: 2rem;
+    }
+    
+    .event h3{
+        text-align: center;
+        font-size: 1rem;
+    }
+    
+    .event p{
+        text-align: center;
+        font-size: 1rem;
+    }
+    
+    
+}

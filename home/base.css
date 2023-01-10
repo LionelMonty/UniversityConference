@@ -19,16 +19,14 @@ body{
     min-height: 100vh;
 }
 
-a{
-    text-decoration: none;
-    color: #fff;
-}
-
-nav ul{
-    display: flex;
-    list-style-type: none;
-}
-
-nav ul li{
-    margin-left: 2.5rem;
+:root {
+    --C0 : rgb(167,169,172);
+    --C1 : rgb(0,125,190);
+    --C2 : rgb(0,88,138);
+    --C3 : rgb(0,171,189);
+    --C4 : rgb(84,198,211);
+    --C5 : rgb(0,183,199);
+    --C6 : rgb(35,31,32);
+    --C7 : rgb(99,100,102);
+    --C8 : #fff;
 }
