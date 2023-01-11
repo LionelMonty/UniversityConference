@@ -16,7 +16,7 @@ nav ul li{
 
 nav ul li a{
     text-decoration: none;
-    color: var(--C8);
+    color: var(--C9);
 }
 
 nav ul li a:hover{
@@ -33,6 +33,7 @@ nav img{
     height: 18rem;
     display: flex;
     align-items: center;
+    
 }
 
 .udmLogo img{
@@ -46,9 +47,8 @@ nav img{
     background-image: url("../images/rea.jpg"); /*rea.jpg ou b.jpg*/
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: centers;
     height: 33rem;
-    color:var(--C8);
+    color:var(--C9);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -70,7 +70,7 @@ nav img{
 }
 
 .event p a{
-    color: var(--C8);
+    color: var(--C9);
     text-decoration: none;
 }
 
@@ -81,6 +81,7 @@ nav img{
     display: flex;
     align-items: center;
     justify-content: right;
+    background-color: var(--C9);
 }
 
 .icacieLogo img{
@@ -101,7 +102,7 @@ nav img{
 
 .bar span{
     position:absolute;
-    color: var(--C8);
+    color: var(--C9);
     font-size: 3.2rem;
     padding: 0 -1rem;
 }
@@ -110,9 +111,136 @@ input[type="checkbox"]{
     display: none;
 }
 
+/*-----Welcome Content-----*/
+.welcome-Content{
+    background-image: url("../images/welcome.jpg");
+    /*background-color: var(--C6);*/
+    padding: 12rem 22rem;
+}
 
+.welcome-Content h1{
+    text-align: center;
+    color: var(--C9);
+    margin-bottom: 5rem;
+}
 
+.welcome-Content h1 span{
+    color: var(--C1);
+}
 
+.welcome-Content p{
+    text-align: justify;
+    color: var(--C9);
+}
+
+.welcome-Content p span{
+    color: var(--C1);
+}
+
+/*-----keynote Content-----*/
+
+.keynote-Content{
+    padding: 8rem 1rem;
+    padding-bottom: 1rem;
+    background-color: #e4e4e4;
+}
+
+.keynote-Content h1{
+    text-align: center;
+}
+
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container__image{
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 1.5rem 3.5rem -1.5rem rgba(0,0,0,0.5), 0 0.5rem 2rem rgba(0,0,0,0.1);
+}
+
+.card-container__image img{
+    width: 100%;
+    height: 100%;
+}
+
+.card-container{
+    position: relative;
+    width: 29rem;
+    background-color: var(--C8);
+    border-radius: 0.8rem;
+    box-shadow: 0 0.8rem 0.8rem 0 var(--C6);
+    padding: 1.6rem;
+    margin: 5.6rem 2.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container p{
+    line-height: 2.4rem;
+    letter-spacing: 0.5px;
+    margin-bottom: 1.2rem;
+    text-align: center;
+}
+
+.name{
+    margin-top: 8rem;
+    font-size: 1.4rem;
+    color: var(--C0);
+    font-weight: bold;
+    letter-spacing: 0.8px;
+    margin-bottom: 8px;
+}
+
+.socials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    margin:1.2rem 0.8rem;
+    width: 4.4rem;
+    height: 4.4rem;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: opacity 0.4;
+}
+
+button:hover{
+    opacity: 0.8;
+}
+button i{
+    color: var(--C8);
+    font-size: 1.4rem;
+}
+
+/*-----social media color-----*/
+
+button.github{
+    background-color: #24292e;
+}
+
+button.twitter{
+    background-color: #1da1f2;
+}
+
+button.pinterest{
+    background-color: #d3263a;
+}
 
 /*-----responsive-----*/
 
@@ -242,7 +370,48 @@ input[type="checkbox"]{
     .event p{
         text-align: center;
         font-size: 1rem;
+    }   
+
+    /*-----Welcome Content-----*/
+    .welcome-Content{
+        padding: 7rem;
     }
-    
-    
+
+    .welcome-Content h1{
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .welcome-Content p{
+        font-size: 1rem;
+    }
+
+    /*-----keynote Content-----*/
+
+    .keynote-Content h1{
+        font-size: 2rem;
+    }
+
+    .card-container{
+        width: 27rem;
+    }
+   
+}
+
+
+
+@media screen and (max-width:947px){
+    /*-----Welcome Content-----*/
+    .welcome-Content{
+        padding: 7rem 7rem;
+    }
+
+    .welcome-Content h1{
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .welcome-Content p{
+        font-size: 1.5rem;
+    }
 }
