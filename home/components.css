@@ -242,6 +242,151 @@ button.pinterest{
     background-color: #d3263a;
 }
 
+/*-----Publication Content-----*/
+
+.publication-content{
+    padding: 8rem 20rem;
+    background-color: var(--C6);
+    padding-bottom: 5rem;
+}
+
+.publication-content h1{
+    text-align: center;
+    color: var(--C9);
+}
+
+.publication-content__container{
+    display: flex;
+    padding: 5rem;
+}
+
+.book-description{
+    padding-left: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.book-description p{
+    padding: 2rem;
+    text-align: justify;
+    color: var(--C9);
+}
+
+.book-description p span{
+    color:  var(--C1);
+}
+
+/*-----News Content-----*/
+
+.news-content{
+    padding: 5rem;
+    justify-content: center;
+}
+
+.news-content h1{
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.news-content__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*-----sponsor-----*/
+
+.news-content__sponsor{
+    width: 40rem;
+    height: 26rem;
+    border-radius: 5rem;
+    box-shadow: 0 0.8rem 0.8rem 0 var(--C6);
+    border: 0.3rem solid var(--C1);
+    padding: 2rem;
+    margin: 2rem;
+}
+
+.news-content__sponsor h2{
+    text-align: center;
+}
+
+.sponsor__img{
+    padding: 2rem 0;
+    width: 35rem;
+    height: 20rem;
+}
+
+.sponsor__img img{
+    width: 100%;
+    height: 100%;
+}
+
+/*-----conference management-----*/
+
+.news-content__conference-management{
+    width: 40rem;
+    height: 26rem;
+    border-radius: 5rem;
+    box-shadow: 0 0.8rem 0.8rem 0 var(--C6);
+    border: 0.3rem solid var(--C1);
+    padding: 2rem;
+    margin: 2rem;
+}
+
+.news-content__conference-management h2{
+    text-align: center;
+}
+
+.conference-management__img{
+    padding: 2rem 0;
+    width: 35rem;
+    height: 20rem;
+}
+
+.conference-management__img img{
+    width: 100%;
+    height: 100%;
+}
+
+/*-----publication partner-----*/
+
+.news-content__publication-partner{
+    width: 40rem;
+    height: 26rem;
+    border-radius: 5rem;
+    box-shadow: 0 0.8rem 0.8rem 0 var(--C6);
+    border: 0.3rem solid var(--C1);
+    padding: 2rem;
+    margin: 2rem;
+}
+
+.news-content__publication-partner h2{
+    text-align: center;
+}
+
+.publication-partner__img{
+    padding: 2rem 0;
+    width: 35rem;
+    height: 20rem;
+}
+
+.publication-partner__img img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.footer{
+    background-color: var(--C6);
+    padding: 2rem;
+}
+
+.footer p{
+    text-align: center;
+    color: var(--C9);
+}
+
 /*-----responsive-----*/
 
 @media screen and (max-width:690px){
@@ -341,7 +486,7 @@ button.pinterest{
     }
 
     .udmLogo img{
-        height: 9rem;
+        height: 7rem;
     }
 
     .icacieLogo{
@@ -350,7 +495,7 @@ button.pinterest{
     }
 
     .icacieLogo img{
-        height: 9rem;
+        height: 7rem;
     }
 
     .event{
@@ -396,6 +541,29 @@ button.pinterest{
         width: 27rem;
     }
    
+    /*-----Publication Content-----*/
+
+    .publication-content__container{
+        margin: 2rem -5rem;
+        padding: 1rem ;
+    }
+
+    .publication-content h1{
+        font-size: 2rem;
+    }
+
+    /*-----Important news-----*/
+
+    .news-content h1{
+        font-size: 2rem;
+    }
+
+    .news-content__sponsor h2,
+    .news-content__conference-management h2,
+    .news-content__publication-partner h2{
+        font-size: 1.5rem;
+    }
+
 }
 
 
@@ -414,4 +582,62 @@ button.pinterest{
     .welcome-Content p{
         font-size: 1.5rem;
     }
+}
+
+@media screen and (max-width:1022px){
+
+    /*-----Publication Content-----*/
+
+    .publication-content{
+        padding: 8rem 8rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .publication-content__container{
+        flex-direction: column;
+    }
+
+    .book-image{
+        display: flex;
+        justify-content: center;
+    }
+
+    .book-description p{
+        padding-top: 5rem;
+    }
+
+    .book-description{
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width:500px){
+
+    /*-----important news-----*/
+    .news-content__sponsor{
+        width: 96%;
+    }
+
+    .sponsor__img{
+        width: 97%;
+    }
+
+    .news-content__conference-management{
+        width: 96%;
+    } 
+
+    .conference-management__img{
+        width: 97%;
+        height: 78%;
+    }
+
+    .news-content__publication-partner{
+        width: 96%;
+    }
+
+    .publication-partner__img{
+        width: 97%;
+        height: 78%;
+    }
+
 }
