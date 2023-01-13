@@ -1,0 +1,358 @@
+/*navigation bar*/
+nav{
+    font-size: 2rem;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+
+nav ul li{
+    margin: 1rem;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: var(--C9);
+}
+
+nav ul li a:hover{
+    color: var(--C1); 
+}
+
+nav img{
+    height: 4rem;
+    display: none;
+}
+/*main Content ==> udmLogo*/
+
+.udmLogo{
+    height: 18rem;
+    display: flex;
+    align-items: center;
+    
+}
+
+.udmLogo img{
+    height: 9rem;
+    margin: 5rem;
+}
+
+/*styling icon for nav bar*/
+
+.bar{
+    display: flex;
+    flex:1;
+    margin: 3rem;
+    align-items: center;
+    justify-content: right;
+    display: none;
+}
+
+.bar span{
+    position:absolute;
+    color: var(--C9);
+    font-size: 3.2rem;
+    padding: 0 -1rem;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+/*-----main content-----*/
+
+/*title*/
+.title{
+    text-align: center;
+    padding: 6rem;
+    height: 18rem;
+    z-index: -1;
+}
+
+/*background title*/
+.background-title{
+    background-image: url("../images/r.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5rem;
+    z-index: -1;
+}
+
+.background-title h1,
+.background-title h3{
+    color: var(--C9);
+}
+
+.background-title__container{
+    width: 60%;
+}
+
+span{
+    color: var(--C1);
+}
+
+/*-----Keynote Speaker Container-----*/
+
+.keynote-speaker__container{
+    display: flex;
+    padding: 5rem;
+}
+
+.speaker{
+    display: flex;
+    flex-direction: column;
+}
+
+.pfp{
+    display: none;
+}
+
+.speaker-name{
+    text-align: center;
+    padding-bottom: 5rem;
+    padding-right: 5rem;
+}
+
+.speaker-description{
+    text-align: justify;
+    padding-right: 5rem;
+}
+
+.speaker-photo{
+    /*display: none;*/
+    width: 185rem;
+}
+
+
+.speaker-photo img{
+    width: 100%;
+    height: 100%;
+}
+
+/*speaker black*/
+.keynote-speaker__container-black{
+    background-color: var(--C6);
+    padding: 5rem;
+    display: flex;
+}
+
+.speaker-black{
+    display: flex;
+    flex-direction: column;
+}
+
+.pfp-black{
+    width: 100rem;
+}
+
+.pfp-black img{
+    width: 100%;
+    height: 100%;
+}
+
+.speaker__black-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.speakerblack-name{
+    text-align: center;
+    padding-left: 5rem;
+    padding-bottom: 8rem;
+    color: var(--C9);
+}
+
+.speakerblack-description{
+    padding-left: 5rem;
+    text-align: justify;
+    color: var(--C9);
+}
+
+/*-----footer-----*/
+
+.footer p{
+    text-align: center;
+    color: var(--C9);
+}
+
+/*-----Responsive-----*/
+
+@media screen and (max-width:690px){
+
+    /*navigation bar*/
+    nav{
+        height: 7rem;
+        padding: 1rem;
+    }
+
+    .udmLogo img{
+        z-index: -1;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--C6);
+        line-height: 2.4rem;
+        visibility: hidden;
+        transition: 0.3s;
+    }
+
+    nav ul li{
+        transition: 0.3s 0.1s all;
+        opacity: 0;
+    }
+
+    nav ul li a{
+        color:var(--C8);
+    }
+
+    nav img{
+        display:flex;
+        height: 4rem;
+        width: 28%;
+        padding: 0.4rem 1rem;
+    }
+
+    /*icon bar*/
+    .bar{
+        display: flex;
+        position: absolute;
+        top: -1rem;
+        right: -1rem;
+        cursor: pointer;
+        padding: 1rem;
+    }
+
+    .bar #times{
+        display:none;
+    }
+
+    #check:checked ~ nav .bar #times{
+        display: block;
+    } 
+
+    #check:checked ~ nav .bar #bars{
+        display: none;
+    } 
+
+    #check:checked ~ nav ul{
+        visibility: visible;
+    }
+
+    /*style menu*/
+    nav ul li:nth-child(1){
+        transform: translateX(-15rem);
+    }
+    nav ul li:nth-child(2){
+        transform: translateX(-20rem);
+    }
+    nav ul li:nth-child(3){
+        transform: translateX(-25rem);
+    }
+    nav ul li:nth-child(4){
+        transform: translateX(-30rem);
+    }
+    nav ul li:nth-child(5){
+        transform: translateX(-35rem);
+    }
+
+    #check:checked ~ nav  ul li:nth-child(1),
+    #check:checked ~ nav  ul li:nth-child(2),
+    #check:checked ~ nav  ul li:nth-child(3),
+    #check:checked ~ nav  ul li:nth-child(4),
+    #check:checked ~ nav  ul li:nth-child(5){
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    /*-----main-Content ==>title-----*/
+    .title h1{
+        font-size: 2rem;
+        padding-top: 1.8rem;
+    }
+
+    /*-----main-Content ==>background-title-----*/
+    .background-title h3{
+        font-size: 1.2rem;
+    }
+
+    /*-----keynote-speaker-----*/
+    .speaker-name h1{
+        font-size: 2rem;
+    }
+
+    .speaker-name h3{
+        font-size: 1.5rem;
+    }
+
+}
+
+
+@media screen and (max-width:828px){
+
+/*-----main-Content ==>background-title-----*/
+    .background-title h1{
+        font-size: 2rem;
+    }
+
+    .background-title h2{
+        font-size: 1.5rem;
+    }
+
+}
+
+
+@media screen and (max-width:983px){
+
+    /*-----keynote-speaker-----*/
+    .speaker-photo{
+        display: none;
+    }
+
+    .pfp{
+        display: block;
+        text-align: center;
+    }
+
+    .speaker-name,
+    .speaker-description{
+        padding-right: 0;
+    }
+
+
+    /*black speaker*/
+    .keynote-speaker__container-black{
+        flex-direction: column;
+    }
+
+    .pfp-black{
+        display: none;
+    }
+
+    .speakerblack-name,
+    .speakerblack-description{
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width:1263px){
+
+    /*-----keynote-speaker-----*/
+    .speaker-name,
+    .speakerblack-name{
+        padding-bottom: 2rem;
+    }
+
+    
+}

@@ -112,11 +112,6 @@ input[type="checkbox"]{
 }
 
 /*-----Welcome Content-----*/
-.welcome-Content{
-    background-image: url("../images/welcome.jpg");
-    /*background-color: var(--C6);*/
-    padding: 12rem 22rem;
-}
 
 .welcome-Content h1{
     text-align: center;
@@ -138,12 +133,6 @@ input[type="checkbox"]{
 }
 
 /*-----keynote Content-----*/
-
-.keynote-Content{
-    padding: 8rem 1rem;
-    padding-bottom: 1rem;
-    background-color: #e4e4e4;
-}
 
 .keynote-Content h1{
     text-align: center;
@@ -244,12 +233,6 @@ button.pinterest{
 
 /*-----Publication Content-----*/
 
-.publication-content{
-    padding: 8rem 20rem;
-    background-color: var(--C6);
-    padding-bottom: 5rem;
-}
-
 .publication-content h1{
     text-align: center;
     color: var(--C9);
@@ -278,11 +261,6 @@ button.pinterest{
 }
 
 /*-----News Content-----*/
-
-.news-content{
-    padding: 5rem;
-    justify-content: center;
-}
 
 .news-content h1{
     text-align: center;
@@ -376,11 +354,7 @@ button.pinterest{
     height: 100%;
 }
 
-
-.footer{
-    background-color: var(--C6);
-    padding: 2rem;
-}
+/*-----footer-----*/
 
 .footer p{
     text-align: center;

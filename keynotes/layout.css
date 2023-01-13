@@ -1,0 +1,19 @@
+.header{
+    background-color: rgb(35,31,32);
+    height: 6.2rem;
+}
+
+.main-Content{
+    display: flex;
+    flex-direction: column;
+}
+
+.keynote-speaker{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer{
+    background-color: var(--C6);
+    padding: 2rem;
+}
