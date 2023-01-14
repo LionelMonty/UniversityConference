@@ -1,0 +1,258 @@
+/*navigation bar*/
+nav{
+    font-size: 2rem;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+
+nav ul li{
+    margin: 1rem;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: var(--C9);
+}
+
+nav ul li a:hover{
+    color: var(--C1); 
+}
+
+nav img{
+    height: 4rem;
+    display: none;
+}
+/*main Content ==> udmLogo*/
+
+.udmLogo{
+    height: 18rem;
+    display: flex;
+    align-items: center;
+    
+}
+
+.udmLogo img{
+    height: 9rem;
+    margin: 5rem;
+}
+
+/*styling icon for nav bar*/
+
+.bar{
+    display: flex;
+    flex:1;
+    margin: 3rem;
+    align-items: center;
+    justify-content: right;
+    display: none;
+}
+
+.bar span{
+    position:absolute;
+    color: var(--C9);
+    font-size: 3.2rem;
+    padding: 0 -1rem;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+/*-----Main Content-----*/
+
+/*background title*/
+.background-title{
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),url('../images/k.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: -1;
+}
+
+.background-title h1,
+.background-title h2{
+    justify-content: center;
+    text-align: center;
+    color: var(--C9);
+}
+
+.background-title h1{
+    font-size: 5rem;
+}
+
+.background-title h2{
+    font-size: 3rem;
+}
+
+/*-----Travel Restrictions-----*/
+.travel-restrictions{
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 15rem;
+}
+
+.travel-restrictions h3{
+    padding-bottom: 3rem;
+    text-align: center;
+}
+
+
+.travel-restrictions__lists{
+    display: flex;
+}
+
+.list{
+    flex: 1;
+    margin-top: 12rem;
+    text-align: justify;
+}
+
+.list-img{
+    width: 35rem;
+    height: 35rem;
+    margin-right: 5rem;
+}
+
+.list-img img{
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width:1163px){
+    .list{
+        margin-top: 3rem;
+        flex: 0;
+        margin: 2rem 10rem;
+    }
+
+    .travel-restrictions{
+        padding: 3rem;
+    }
+
+    .travel-restrictions__lists{
+        flex-direction: column;
+    }
+
+    .list-img{
+        flex: 1;
+        background-color: aqua;
+        position: relative;
+        left: 33%;
+        text-align: center;   
+    }
+
+}
+
+
+@media screen and (max-width:690px){
+
+    /*navigation bar*/
+    nav{
+        height: 7rem;
+        padding: 1rem;
+    }
+
+    .udmLogo img{
+        z-index: -1;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--C6);
+        line-height: 2.4rem;
+        visibility: hidden;
+        transition: 0.3s;
+    }
+
+    nav ul li{
+        transition: 0.3s 0.1s all;
+        opacity: 0;
+    }
+
+    nav ul li a{
+        color:var(--C8);
+    }
+
+    nav img{
+        display:flex;
+        height: 4rem;
+        width: 28%;
+        padding: 0.4rem 1rem;
+    }
+
+    /*icon bar*/
+    .bar{
+        display: flex;
+        position: absolute;
+        top: -1rem;
+        right: -1rem;
+        cursor: pointer;
+        padding: 1rem;
+    }
+
+    .bar #times{
+        display:none;
+    }
+
+    #check:checked ~ nav .bar #times{
+        display: block;
+    } 
+
+    #check:checked ~ nav .bar #bars{
+        display: none;
+    } 
+
+    #check:checked ~ nav ul{
+        visibility: visible;
+    }
+
+    /*style menu*/
+    nav ul li:nth-child(1){
+        transform: translateX(-15rem);
+    }
+    nav ul li:nth-child(2){
+        transform: translateX(-20rem);
+    }
+    nav ul li:nth-child(3){
+        transform: translateX(-25rem);
+    }
+    nav ul li:nth-child(4){
+        transform: translateX(-30rem);
+    }
+    nav ul li:nth-child(5){
+        transform: translateX(-35rem);
+    }
+
+    #check:checked ~ nav  ul li:nth-child(1),
+    #check:checked ~ nav  ul li:nth-child(2),
+    #check:checked ~ nav  ul li:nth-child(3),
+    #check:checked ~ nav  ul li:nth-child(4),
+    #check:checked ~ nav  ul li:nth-child(5){
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    .background-title{
+        background-size: cover;
+    }
+
+    .background-title h1{
+        font-size: 2rem;
+    }
+    
+    .background-title h2{
+        font-size: 1.5rem;
+    }
+
+}

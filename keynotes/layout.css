@@ -1,5 +1,5 @@
 .header{
-    background-color: rgb(35,31,32);
+    background-color: var(--C6);
     height: 6.2rem;
 }
 
