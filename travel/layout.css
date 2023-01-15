@@ -2,3 +2,14 @@
     background-color: var(--C6);
     height: 6.2rem;
 }
+
+.travel-restrictions{
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 15rem;
+}
+
+.travel-requirement{
+    background-color: var(--C6);
+    color: var(--C9);
+}
