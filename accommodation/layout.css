@@ -2,3 +2,14 @@
     background-color: var(--C6);
     height: 6.2rem;
 }
+
+.accommodation{
+    background-color: var(--C9);
+}
+
+
+
+.footer{
+    background-color: var(--C6);
+    padding: 2rem;
+}

@@ -96,12 +96,142 @@ input[type="checkbox"]{
 /*-----accommodation------*/
 .accommodation__title{
     text-align: center;
-    padding: 5rem 0;
+    padding: 4rem 0;
 }
 
+.accommodation__hotel-row{
+    padding: 0 18rem;
+    padding-bottom: 5rem;
+}
+
+.first-hotel{
+    width: 40%;
+}
+
+.first-hotel__note img{
+    width: 100%;
+    height: 100%;
+}
+
+/*-----hotel-----*/
+.hotel-button{
+    width: 100%;
+    height: 3rem;
+    background-color: var(--C6);
+    color: var(--C9);
+    margin-bottom: 5rem;
+}
+
+.hotel-button1{
+    width: 100%;
+    height: 3rem;
+    background-color: var(--C6);
+    color: var(--C9);
+    margin-bottom: 0;
+}
+
+.first-hotel__note img{
+    height: 15rem;
+}
+
+.first-hotel__note1{
+    width: 45%;
+}
+
+.hotel-img{
+    height: 12rem;
+}
+
+.hotel-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.hotel-column__row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.hotel-column{
+    display: flex;
+    justify-content: space-between;
+}
+
+.hotel-col{
+    width: 55%;
+}
+
+.images{
+    height: 47.2rem;
+}
+
+.images img{
+    width: 100%;
+    height: 100%;
+}
+
+/*-----footer-----*/
+.footer p{
+    text-align: center;
+    color: var(--C9);
+}
+
+@media screen and (max-width:1215px){
+    .images{
+        height: 47.1rem;
+    }
+
+    .accommodation__hotel-row{
+        padding: 0 5rem;
+    }
+}
+
+@media screen and (max-width:1014px){
+    .images{
+        height: 47.1rem;
+    }
+
+}
+
+@media screen and (max-width:970px){
+    .hotel-column{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hotel-column__column{
+        padding-top: 5rem;
+        justify-content: center;
+        align-self: center;
+        justify-self: center;
+    }
+    .first-hotel{
+        width: 80%;
+    }
+
+    .hotel-col{
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hotel-column{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .images{
+        height: 30rem;
+        justify-content: center;
+    }
+
+    .first-hotel__note{
+        justify-content: center;
+    }
 
 
 
+}
 
 @media screen and (max-width:690px){
 
@@ -210,7 +340,32 @@ input[type="checkbox"]{
     .background-title{
         background-size: cover;
     }
+
+    /*-----accommodation-----*/
+    .hotel-column{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .first-hotel{
+        width: 100%;
+    }
+
+    .hotel-column__column{
+        margin: 0 -8.2rem;
+    }
+
+    .hotel-col{
+        width: 91.5%;
+        padding: 0 1rem;
+    }
+
+    .hotel-column__column{
+        padding: 5rem 5rem 0 5rem;
+    }
 }
+
+
 
 @media screen and (max-width:892px){
     /*-----main content-----*/
