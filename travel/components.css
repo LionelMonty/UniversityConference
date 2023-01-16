@@ -122,7 +122,7 @@ input[type="checkbox"]{
 /*-----travel requirement-----*/
 .travel-requirement__title{
     text-align: center;
-    padding-top: 5rem;
+    padding: 5rem 0;
 }
 
 .travel-requirement__list{
@@ -132,10 +132,33 @@ input[type="checkbox"]{
 
 .travel-requirement__list p{
     padding-bottom: 2rem;
+    text-align: justify;
 }
 
 .ulList{
     padding-left: 5rem;
+    text-align: justify;
+}
+
+/*-----DEPARTURE-----*/
+.departure__title{
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.departure__list{
+    padding: 0 15rem;
+    padding-bottom: 5rem;
+}
+
+.departure__list ul li{
+    text-align: justify;
+}
+
+/*-----footer-----*/
+.footer p{
+    text-align: center;
+    color: var(--C9);
 }
 
 @media screen and (max-width:690px){
@@ -263,10 +286,21 @@ input[type="checkbox"]{
     /*-----travel requirement-----*/
     .ulList{
         padding-left: 0;
+        padding-bottom: 5rem;
     }
 
     .travel-requirement__list{
-        padding: 5rem;
+        padding: 0 5rem;
+    }
+
+    .travel-requirement__title{
+        text-align: center;
+    }
+
+    /*-----departure-----*/
+    .departure__list{
+        padding: 0 5rem;
+        padding-bottom: 5rem;
     }
 }
 
