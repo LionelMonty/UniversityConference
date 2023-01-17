@@ -241,10 +241,6 @@ input[type="checkbox"]{
         padding: 1rem;
     }
 
-    .udmLogo img{
-        z-index: -1;
-    }
-
     nav ul{
         display: flex;
         flex-direction: column;
@@ -254,6 +250,7 @@ input[type="checkbox"]{
         line-height: 2.4rem;
         visibility: hidden;
         transition: 0.3s;
+        z-index: -1;
     }
 
     nav ul li{
@@ -325,6 +322,10 @@ input[type="checkbox"]{
     }
 
     /*-----main content-----*/
+    .main-Content{
+        z-index: -1;
+    }
+
     .background-title h1{
         font-size: 2rem;
         padding-right: 2rem;
