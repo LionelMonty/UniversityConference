@@ -2,3 +2,9 @@
     background-color: var(--C6);
     height: 6.2rem;
 }
+
+
+.footer{
+    background-color: var(--C6);
+    padding: 2rem;
+}
