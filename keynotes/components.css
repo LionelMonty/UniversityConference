@@ -26,6 +26,10 @@ nav img{
     height: 4rem;
     display: none;
 }
+
+.active{
+    color: var(--C6);
+}
 /*main Content ==> udmLogo*/
 
 .udmLogo{

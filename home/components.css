@@ -28,6 +28,10 @@ nav img{
     display: none;
 }
 
+.active{
+    color: var(--C6);
+}
+
 /*-----ticker-----*/
 .ticker-wrapper-h{
 	display: flex;	
