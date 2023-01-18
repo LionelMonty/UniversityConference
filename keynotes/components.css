@@ -151,7 +151,7 @@ input[type="checkbox"]{
 }
 
 span{
-    color: var(--C1);
+    color: var(--C6);
 }
 
 /*-----Keynote Speaker Container-----*/
@@ -183,10 +183,21 @@ span{
 }
 
 .speaker-photo{
-    /*display: none;*/
     width: 185rem;
+    animation: zoom-in-zoom-out 3.5s ease infinite;
 }
 
+@keyframes zoom-in-zoom-out{
+    0%{
+        transform: scale(1, 1);
+    }
+    50%{
+        transform: scale(1.03, 1.03);
+    }
+    100%{
+        transform: scale(1, 1);
+    }
+}
 
 .speaker-photo img{
     width: 100%;
@@ -207,6 +218,7 @@ span{
 
 .pfp-black{
     width: 100rem;
+    animation: zoom-in-zoom-out 3.5s ease infinite;
 }
 
 .pfp-black img{
