@@ -20,38 +20,107 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    color: var(--C1); 
+    color: var(--C6); 
 }
 
 nav img{
     height: 4rem;
     display: none;
 }
+
+/*-----ticker-----*/
+.ticker-wrapper-h{
+	display: flex;	
+	overflow: hidden;
+    position: relative;
+    z-index: -1;
+    background-color: var(--C9);
+}
+
+.news-ticker-h{
+	display: flex;
+	margin:0;
+	padding: 0;
+	padding-left: 90%;
+	z-index: 999;
+
+	
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-name: tic-h;
+	animation-duration: 40s;
+	
+}
+.news-ticker-h:hover { 
+	animation-play-state: paused; 
+}
+
+.news-ticker-h li{
+	display: flex;
+	width: 100%;
+	align-items: center;
+	white-space: nowrap;
+	padding-left: 20px;
+}
+
+.news-ticker-h li a{
+	color: #212529;
+	font-weight: bold;
+    text-decoration: none;
+    z-index: 1;
+}
+
+@keyframes tic-h {
+	0% {
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+		visibility: visible;
+	}
+	100% {
+		-webkit-transform: translate3d(-100%, 0, 0);
+		transform: translate3d(-100%, 0, 0);
+	}
+}
+
 /*main Content ==> udmLogo*/
 
 .udmLogo{
-    height: 18rem;
+    height: 13rem;
     display: flex;
     align-items: center;
-    
+    background-color: var(--C9);
 }
 
 .udmLogo img{
     height: 9rem;
-    margin: 5rem;
+    margin: 3rem;
+    margin-top: 1.7rem;
 }
 
 /*main Content ==> event*/
 
 .event{
-    background-image: url("../images/rea.jpg"); /*rea.jpg ou b.jpg*/
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(20, 136, 204, 0.555)), url("../images/meeting.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 33rem;
+    height: 39rem;
     color:var(--C9);
     display: flex;
     flex-direction: column;
     justify-content: center;
+    animation: zoom-in-zoom-out 15s ease infinite;
+}
+
+@keyframes zoom-in-zoom-out{
+    0%{
+        transform: scale(1, 1);
+    }
+    50%{
+        transform: scale(1.03, 1.03);
+    }
+    100%{
+        transform: scale(1, 1);
+    }
 }
 
 .event h2{
@@ -77,7 +146,7 @@ nav img{
 /*main Content ==> icacieLogo*/
 
 .icacieLogo{
-    height: 18rem;
+    height: 15rem;
     display: flex;
     align-items: center;
     justify-content: right;
@@ -86,7 +155,7 @@ nav img{
 
 .icacieLogo img{
     height: 9rem;
-    margin: 5rem;
+    margin: 3rem;
 }
 
 /*styling icon for nav bar*/
@@ -120,7 +189,7 @@ input[type="checkbox"]{
 }
 
 .welcome-Content h1 span{
-    color: var(--C1);
+    color: var(--C6);
 }
 
 .welcome-Content p{
@@ -129,7 +198,7 @@ input[type="checkbox"]{
 }
 
 .welcome-Content p span{
-    color: var(--C1);
+    color: var(--C6);
 }
 
 /*-----keynote Content-----*/
@@ -161,6 +230,10 @@ input[type="checkbox"]{
 .card-container__image img{
     width: 100%;
     height: 100%;
+}
+
+.card-container__image:hover{
+    border-radius: 1rem;
 }
 
 .card-container{
@@ -257,7 +330,7 @@ button.pinterest{
 }
 
 .book-description p span{
-    color:  var(--C1);
+    color:  var(--C6);
 }
 
 /*-----News Content-----*/
@@ -380,10 +453,12 @@ button.pinterest{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: var(--C6);
+        background-color: var(--C1);
         line-height: 2.4rem;
         visibility: hidden;
         transition: 0.3s;
+        position: relative;
+        z-index: 3;
     }
 
     nav ul li{

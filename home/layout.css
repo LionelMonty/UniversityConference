@@ -1,5 +1,5 @@
 .header{
-    background-color: var(--C6);
+    background-color: var(--C1);
     height: 6.2rem;
 }
 
@@ -9,7 +9,7 @@
 }
 
 .welcome-Content{
-    background-image: url("../images/welcome.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(20, 136, 204, 0.555)), url("../images/blue.jpg");
     /*background-color: var(--C6);*/
     padding: 12rem 22rem;
 }
@@ -17,21 +17,22 @@
 .keynote-Content{
     padding: 8rem 1rem;
     padding-bottom: 1rem;
-    background-color: #e4e4e4;
+    background-color: var(--C9);
 }
 
 .publication-content{
     padding: 8rem 20rem;
-    background-color: var(--C6);
+    background-color: var(--C10);
     padding-bottom: 5rem;
 }
 
 .news-content{
     padding: 5rem;
     justify-content: center;
+    background-color: var(--C9);
 }
 
 .footer{
-    background-color: var(--C6);
+    background-color: var(--C1);
     padding: 2rem;
 }

@@ -19,7 +19,7 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    color: var(--C1); 
+    color: var(--C6); 
 }
 
 nav img{
@@ -65,14 +65,11 @@ input[type="checkbox"]{
 /*-----Main Content-----*/
 
 /*background title*/
-.bg{
-    display: none;
-}
 
 .background-title{
     background: rgba(0, 0, 0, 0.83);
     backdrop-filter: blur(70px);
-    background-image: url(../images/tree.jpg);
+    background-image: url("../images/bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -143,7 +140,7 @@ input[type="checkbox"]{
     width: 100%;
     justify-content: center;
     align-items: center;
-    color: var(--C9);
+    color: rgba(41, 25, 25, 0.644);
     height: 50rem;
     margin: 0 auto;
 }
@@ -207,6 +204,20 @@ input[type="checkbox"]{
     color: var(--C9);
 }
 
+@media screen and (max-width:1036px){
+    .tree1,
+    .tree2,
+    .tree3,
+    .tree4{
+        display: none;
+    }
+
+    .title h1,
+    .title h2{
+        color: var(--C9)
+    }
+}
+
 @media screen and (max-width:690px){
 
     /*navigation bar*/
@@ -220,10 +231,11 @@ input[type="checkbox"]{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: var(--C6);
+        background-color: var(--C1);
         line-height: 2.4rem;
         visibility: hidden;
         transition: 0.3s;
+        position: relative;
         z-index: 3;
     }
 
@@ -312,8 +324,9 @@ input[type="checkbox"]{
     }
 
     .title{
-        height: 46rem;
-        z-index: 1;
+        height: 40rem;
+        position: absolute;
+        z-index: 2;
         display: flex;
     }
 
@@ -325,19 +338,8 @@ input[type="checkbox"]{
 
     .background-title{
         height: 40rem;
-        display: none;
-    }
-    
-    .bg{
-        display:flex;
-        height: 46rem;
-        z-index: -1;
-    }
-
-    .bg img{
-        height: 100%;
-        width: 100%;
-        z-index: -1;
+        position: relative;
+        z-index: 1;
     }
 
     .main-Content__title{
@@ -358,6 +360,7 @@ input[type="checkbox"]{
     }
 
     .gallery__title h1{
-        padding-bottom: 3rem;
+        padding-bottom: 2rem;
     }
+
 }

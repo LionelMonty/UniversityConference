@@ -19,7 +19,7 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    color: var(--C1); 
+    color: var(--C6); 
 }
 
 nav img{
@@ -62,19 +62,74 @@ input[type="checkbox"]{
     display: none;
 }
 
+/*-----ticker-----*/
+.ticker-wrapper-h{
+	display: flex;	
+	overflow: hidden;
+    position: relative;
+    z-index: -1;
+    background-color: var(--C9);
+}
+
+.news-ticker-h{
+	display: flex;
+	margin:0;
+	padding: 0;
+	padding-left: 90%;
+	z-index: 999;
+
+	
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-name: tic-h;
+	animation-duration: 40s;
+	
+}
+.news-ticker-h:hover { 
+	animation-play-state: paused; 
+}
+
+.news-ticker-h li{
+	display: flex;
+	width: 100%;
+	align-items: center;
+	white-space: nowrap;
+	padding-left: 20px;
+}
+
+.news-ticker-h li a{
+	color: #212529;
+	font-weight: bold;
+    text-decoration: none;
+    z-index: 1;
+}
+
+@keyframes tic-h {
+	0% {
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+		visibility: visible;
+	}
+	100% {
+		-webkit-transform: translate3d(-100%, 0, 0);
+		transform: translate3d(-100%, 0, 0);
+	}
+}
+
 /*-----main content-----*/
 
 /*title*/
 .title{
     text-align: center;
-    padding: 6rem;
-    height: 18rem;
+    padding: 5rem;
+    height: 15rem;
     z-index: -1;
+    background-color: var(--C9);
 }
 
 /*background title*/
 .background-title{
-    background-image: url("../images/r.jpg");
+    background: linear-gradient(rgba(38, 96, 129, 0), rgba(20, 137, 204, 0.219)), url("../images/man.jpg");
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
@@ -104,6 +159,7 @@ span{
 .keynote-speaker__container{
     display: flex;
     padding: 5rem;
+    background-color: var(--C9);
 }
 
 .speaker{
@@ -139,7 +195,7 @@ span{
 
 /*speaker black*/
 .keynote-speaker__container-black{
-    background-color: var(--C6);
+    background-color: var(--C10);
     padding: 5rem;
     display: flex;
 }
@@ -202,7 +258,7 @@ span{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: var(--C6);
+        background-color: var(--C1);
         line-height: 2.4rem;
         visibility: hidden;
         transition: 0.3s;

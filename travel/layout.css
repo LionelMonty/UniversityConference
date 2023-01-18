@@ -1,5 +1,5 @@
 .header{
-    background-color: var(--C6);
+    background-color: var(--C1);
     height: 6.2rem;
 }
 
@@ -11,7 +11,7 @@
 }
 
 .travel-requirement{
-    background-color: var(--C6);
+    background-color: var(--C10);
     color: var(--C9);
 }
 
@@ -22,6 +22,6 @@
 }
 
 .footer{
-    background-color: var(--C6);
+    background-color: var(--C1);
     padding: 2rem;
 }
