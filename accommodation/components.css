@@ -74,6 +74,7 @@ input[type="checkbox"]{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
     z-index: -1;
 }
 
@@ -250,7 +251,7 @@ input[type="checkbox"]{
         line-height: 2.4rem;
         visibility: hidden;
         transition: 0.3s;
-        z-index: -1;
+        z-index: 1;
     }
 
     nav ul li{
