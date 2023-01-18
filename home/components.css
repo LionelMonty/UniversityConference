@@ -112,20 +112,9 @@ nav img{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    animation: zoom-in-zoom-out 15s ease infinite;
+    overflow: hidden;
 }
 
-@keyframes zoom-in-zoom-out{
-    0%{
-        transform: scale(1, 1);
-    }
-    50%{
-        transform: scale(1.03, 1.03);
-    }
-    100%{
-        transform: scale(1, 1);
-    }
-}
 
 .event h2{
     text-align: center;
@@ -449,7 +438,6 @@ button.pinterest{
     }
 
     .udmLogo img{
-        z-index: -1;
     }
 
     nav ul{
