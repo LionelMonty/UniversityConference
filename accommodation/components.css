@@ -60,7 +60,6 @@ nav img{
     position:absolute;
     color: var(--C9);
     font-size: 3.2rem;
-    padding: 0 -1rem;
 }
 
 input[type="checkbox"]{
@@ -142,6 +141,7 @@ input[type="checkbox"]{
 
 .ht1 {
     height: 15rem;
+    position: relative;
 }
 
 .ht1 img{
