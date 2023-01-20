@@ -140,8 +140,12 @@ input[type="checkbox"]{
     cursor: pointer;
 }
 
-.first-hotel__note img{
+.ht1 {
     height: 15rem;
+}
+
+.ht1 img{
+    height: 100%;
 }
 
 .first-hotel__note1{
@@ -172,7 +176,7 @@ input[type="checkbox"]{
 }
 
 .images{
-    height: 47.2rem;
+    height: 44.5rem;
 }
 
 .images img{
@@ -186,9 +190,15 @@ input[type="checkbox"]{
     color: var(--C9);
 }
 
+@media screen and (max-width:1436px){
+    .images{
+        height: 46.7rem;
+    }
+}
+
 @media screen and (max-width:1215px){
     .images{
-        height: 47.1rem;
+        height: 44.5rem;
     }
 
     .accommodation__hotel-row{
@@ -196,9 +206,9 @@ input[type="checkbox"]{
     }
 }
 
-@media screen and (max-width:1014px){
+@media screen and (max-width:1176px){
     .images{
-        height: 47.1rem;
+        height: 46.7rem;
     }
 
 }
