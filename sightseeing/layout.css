@@ -3,6 +3,16 @@
     height: 6.2rem;
 }
 
+.main-Content{
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery{
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+}
 
 .footer{
     background-color: var(--C1);

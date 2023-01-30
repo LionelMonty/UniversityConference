@@ -1,0 +1,36 @@
+.header{
+    background-color: var(--C1);
+    height: 6.2rem;
+}
+
+.main-Content{
+    background: linear-gradient( 90deg,#09c6f9, #045de9);
+    height: 50rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: -1;
+}
+
+.registration-details{
+    display: flex;
+    flex-direction: column;
+}
+
+.fee-registration{
+    background: linear-gradient( 90deg,#09c6f9, #045de9);
+    display: flex;
+    flex-direction: column;
+    color: var(--C9);
+}
+
+.bank-details{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer{
+    background-color: var(--C1);
+    padding: 2rem;
+}

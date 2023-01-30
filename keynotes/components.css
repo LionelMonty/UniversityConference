@@ -185,19 +185,6 @@ span{
 
 .speaker-photo{
     width: 185rem;
-    animation: zoom-in-zoom-out 3.5s ease infinite;
-}
-
-@keyframes zoom-in-zoom-out{
-    0%{
-        transform: scale(1, 1);
-    }
-    50%{
-        transform: scale(1.03, 1.03);
-    }
-    100%{
-        transform: scale(1, 1);
-    }
 }
 
 .speaker-photo img{
@@ -219,7 +206,6 @@ span{
 
 .pfp-black{
     width: 100rem;
-    animation: zoom-in-zoom-out 3.5s ease infinite;
 }
 
 .pfp-black img{
@@ -335,12 +321,16 @@ span{
     nav ul li:nth-child(5){
         transform: translateX(-35rem);
     }
+    nav ul li:nth-child(6){
+        transform: translateX(-40rem);
+    }
 
     #check:checked ~ nav  ul li:nth-child(1),
     #check:checked ~ nav  ul li:nth-child(2),
     #check:checked ~ nav  ul li:nth-child(3),
     #check:checked ~ nav  ul li:nth-child(4),
-    #check:checked ~ nav  ul li:nth-child(5){
+    #check:checked ~ nav  ul li:nth-child(5),
+    #check:checked ~ nav  ul li:nth-child(6){
         transform: translateX(0);
         opacity: 1;
     }

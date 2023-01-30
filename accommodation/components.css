@@ -331,12 +331,16 @@ input[type="checkbox"]{
     nav ul li:nth-child(5){
         transform: translateX(-35rem);
     }
+    nav ul li:nth-child(6){
+        transform: translateX(-40rem);
+    }
 
     #check:checked ~ nav  ul li:nth-child(1),
     #check:checked ~ nav  ul li:nth-child(2),
     #check:checked ~ nav  ul li:nth-child(3),
     #check:checked ~ nav  ul li:nth-child(4),
-    #check:checked ~ nav  ul li:nth-child(5){
+    #check:checked ~ nav  ul li:nth-child(5),
+    #check:checked ~ nav  ul li:nth-child(6){
         transform: translateX(0);
         opacity: 1;
     }
